@@ -33,6 +33,10 @@ RUN apk --no-cache add \
     && rm -rf /var/cache/apk/*
 
 # ------------------------------------
+# gettext
+RUN apk add --no-cache gettext libintl
+
+# ------------------------------------
 # DOCKER
 RUN apk add --update docker openrc
 RUN rc-update add docker boot
