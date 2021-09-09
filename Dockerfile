@@ -5,6 +5,7 @@ FROM alpine:latest
 
 # install glibc compatibility for alpine
 ENV GLIBC_VER=2.31-r0
+ENV AWS_CLI_VERSION=2.2.36
 
 RUN apk --no-cache add \
         binutils \
@@ -15,7 +16,7 @@ RUN apk --no-cache add \
     && apk add --no-cache \
         glibc-${GLIBC_VER}.apk \
         glibc-bin-${GLIBC_VER}.apk \
-    && curl -sL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip \
+    && curl -sL https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${AWS_CLI_VERSION}.zip -o awscliv2.zip \
     && unzip awscliv2.zip \
     && aws/install \
     && rm -rf \
