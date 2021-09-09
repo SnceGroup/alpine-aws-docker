@@ -37,6 +37,10 @@ RUN apk --no-cache add \
 RUN apk add --no-cache gettext libintl
 
 # ------------------------------------
+# Jsonnet
+RUN apk add --no-cache jsonnet
+
+# ------------------------------------
 # DOCKER
 RUN apk add --update docker openrc
 RUN rc-update add docker boot
