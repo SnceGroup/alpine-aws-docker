@@ -14,7 +14,7 @@ New builds are automatically created on [Docker Hub](https://hub.docker.com/r/sn
 
 ## To build a new version
 
-Launch the `publish.sh {NEW_VERSION}` script. Or manually do the below actions. You can target a stage `terraform` to include the terraform binary or `base` to skip it and lower the final image size.
+Launch the `build.sh {NEW_VERSION}` script. Or manually do the below actions. You can target a stage `terraform` to include the terraform binary or `base` to skip it and lower the final image size.
 
 ```bash
 BASE=sncegroup/alpine-aws-docker

@@ -37,8 +37,8 @@ RUN apk --no-cache add \
 RUN apk add --no-cache gettext libintl
 
 # ------------------------------------
-# Jsonnet
-RUN apk add --no-cache jsonnet
+# Jsonnet and JQ
+RUN apk add --no-cache jsonnet jq
 
 FROM base as docker
 
