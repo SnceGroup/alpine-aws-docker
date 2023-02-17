@@ -51,4 +51,4 @@ FROM docker as terraform
 
 # ------------------------------------
 # Installs Terraform
-RUN apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community --no-cache terraform
+RUN apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community --no-cache terraform=1.3.8-r1
